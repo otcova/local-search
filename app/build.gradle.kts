@@ -19,16 +19,13 @@ dependencies {
     implementation(fileTree("libs"))
     //implementation files("lib/swing-layout");
 
-    // Use JUnit test framework.
-    testImplementation(libs.junit)
-
     // This dependency is used by the application.
     implementation(libs.guava)
 }
 
 tasks.withType<Jar> {
     manifest {
-        attributes["Main-Class"] = "org.example.App"
+        attributes["Main-Class"] = "Demos.Chooser"
     }
 }
 
@@ -41,5 +38,5 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = "org.example.App"
+    mainClass = "Demos.Chooser"
 }
